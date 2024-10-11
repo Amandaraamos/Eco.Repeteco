@@ -1,0 +1,330 @@
+<html><head><base href="https://www.repeteco-sustentavel.org/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Repeteco - Moda Sustentável e Inclusiva</title><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #45a049;
+        --text-color: #333;
+        --bg-color: #f0f4f0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+
+    .leaf {
+        position: fixed;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        background-color: var(--secondary-color);
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #e0e0e0;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .hero {
+        background-image: url('https://source.unsplash.com/random/1200x400/?nature,clothing');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+
+    .section {
+        background-color: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+        transform: translateY(-5px);
+    }
+
+    .section h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 0.5rem;
+    }
+
+    .values {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .value-item {
+        flex-basis: calc(50% - 1rem);
+        margin-bottom: 1rem;
+        background-color: #e8f5e9;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .value-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: var(--secondary-color);
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .value-item {
+            flex-basis: 100%;
+        }
+    }
+
+    /* Animated background */
+    .animated-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.1;
+    }
+</style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <header>
+        <h1>Repeteco</h1>
+        <p>Moda Sustentável e Inclusiva</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#missao">Missão</a></li>
+            <li><a href="#visao">Visão</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Repeteco: Transformando Vidas e o Planeta</h1>
+                <p>Roupas sustentáveis e acessíveis para todos</p>
+                <a href="#contato" class="cta-button">Faça Parte da Mudança</a>
+            </div>
+        </section>
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>A Repeteco é uma iniciativa que visa promover a sustentabilidade e economia de recursos através da reutilização de roupas. Nosso foco é atender pessoas de baixa renda e regiões periféricas, oferecendo peças de qualidade a preços acessíveis.</p>
+        </section>
+        <section id="missao" class="section">
+            <h2>Nossa Missão</h2>
+            <p>Promover o consumo consciente e sustentável, oferecendo roupas de qualidade e acessíveis, com foco na redução de desigualdades. Nossa missão é proporcionar uma segunda vida às roupas, reduzindo o desperdício e criando um impacto positivo nas comunidades de baixa renda e nas regiões periféricas.</p>
+        </section>
+        <section id="visao" class="section">
+            <h2>Nossa Visão</h2>
+            <p>Ser reconhecido como referência em moda circular e sustentável, impulsionando a conscientização ambiental e a inclusão social. Queremos liderar uma transformação no modo de consumir moda, priorizando práticas ecológicas e acessíveis, alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS), principalmente os ODS 10 e 12.</p>
+        </section>
+        <section id="valores" class="section">
+            <h2>Nossos Valores</h2>
+            <div class="values">
+                <div class="value-item">
+                    <h3>Sustentabilidade</h3>
+                    <p>Compromisso com práticas que minimizem o impacto ambiental, priorizando a reutilização de roupas e a economia de recursos.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Inclusão</h3>
+                    <p>Foco em proporcionar acesso à moda para pessoas de baixa renda, promovendo igualdade de oportunidades e redução das desigualdades sociais.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Consciência Social</h3>
+                    <p>Atuar em prol do bem-estar das comunidades periféricas, incentivando o consumo responsável e o empoderamento local.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Transparência</h3>
+                    <p>Práticas comerciais éticas e abertas, garantindo que nossos clientes compreendam o impacto positivo de suas escolhas.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Respeito</h3>
+                    <p>Valorizar cada pessoa envolvida no processo, desde fornecedores até clientes, promovendo dignidade e respeito em todas as relações.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <h2>Entre em Contato</h2>
+            <p>Quer saber mais sobre como podemos ajudar você ou sua comunidade? Entre em contato conosco!</p>
+            <a href="mailto:contato@repeteco.org" class="cta-button">Envie um E-mail</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Repeteco - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animated background
+        const animatedBg = document.querySelector('.animated-bg');
+        const leafColors = ['#4CAF50', '#8BC34A', '#CDDC39', '#7CB342', '#33691E'];
+
+        function createLeaf() {
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * 100 + 'vw';
+            leaf.style.top = -10 + 'px';
+            leaf.style.width = Math.random() * 20 + 10 + 'px';
+            leaf.style.height = Math.random() * 20 + 10 + 'px';
+            leaf.style.background = leafColors[Math.floor(Math.random() * leafColors.length)];
+            leaf.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+            leaf.style.transform = `rotate(${Math.random() * 360}deg)`;
+            animatedBg.appendChild(leaf);
+
+            gsap.to(leaf, {
+                y: '100vh',
+                x: Math.random() * 100 - 50 + 'px',
+                rotation: Math.random() * 360,
+                duration: Math.random() * 10 + 5,
+                ease: 'none',
+                onComplete: () => {
+                    leaf.remove();
+                    createLeaf();
+                }
+            });
+        }
+
+        for (let i = 0; i < 20; i++) {
+            setTimeout(createLeaf, Math.random() * 5000);
+        }
+
+        // Animate sections on scroll
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray('.section').forEach(section => {
+            gsap.from(section, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: 1
+                }
+            });
+        });
+    </script>
+</body>
+</html>
